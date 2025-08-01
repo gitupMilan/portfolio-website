@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+    }
+
+    .skills, .certificates, .blog-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .blog-posts .card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="your-photo.jpg" alt="Your Name">
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Python</h3></div>
+      <div class="card"><h3>SQL</h3></div>
+      <div class="card"><h3>Machine Learning</h3></div>
+      <div class="card"><h3>Statistics</h3></div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2 class="section-title">Certificates</h2>
+    <div class="certificates">
+      <div class="card"><h3>Data Science Certificate</h3></div>
+      <div class="card"><h3>Coursera SQL for Data Science</h3></div>
+      <div class="card"><h3>Machine Learning by Stanford</h3></div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2 class="section-title">Blog</h2>
+    <div class="blog-posts">
+      <div class="card">
+        <h3>How I Built My First ML Model</h3>
+        <p>A journey from scratch to deployment using Scikit-Learn and Flask.</p>
+      </div>
+      <div class="card">
+        <h3>Understanding SQL Joins</h3>
+        <p>A beginner-friendly breakdown of INNER, LEFT, RIGHT and FULL joins.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+</body>
+</html>
